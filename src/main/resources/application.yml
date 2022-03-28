@@ -1,0 +1,22 @@
+server:
+  port: 4499
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    # url: jdbc:mysql://localhost:3306/mydb
+    url: jdbc:mysql://localhost:3306/febrynadb
+    username: root
+    password: 
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: TRUE
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: always
+#  jooq:
+#    sql-dialect: mysql
